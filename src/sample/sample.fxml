@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="240.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="textField" prefHeight="40.0" prefWidth="400.0" />
+      <Button layoutY="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="7" AnchorPane.topAnchor="40.0" />
+      <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="8" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="40.0" />
+      <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="9" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="40.0" />
+      <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="/" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="40.0" />
+      <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="4" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="80.0" />
+       <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="5" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="80.0" />
+       <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="6" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="80.0" />
+       <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="*" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="80.0" />
+       <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="1" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="120.0" />
+       <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="2" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="120.0" />
+       <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="3" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="120.0" />
+       <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="-" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="120.0" />
+       <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="160.0" />
+       <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="." AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="160.0" />
+       <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="=" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="160.0" />
+       <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="+" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="160.0" />
+      <Button layoutY="200.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="400.0" text="C" textAlignment="CENTER" />
+      
+   </children>
+</AnchorPane>
