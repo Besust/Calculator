@@ -41,9 +41,9 @@ public final class Controller implements Initializable {
                 left = BigDecimal.ZERO;
             }
 
-            selectedOperator = " ";
+            selectedOperator = "";
             numberInputting = true;
-            textField.setText("0");
+            textField.clear();
             return;
         }
 
@@ -57,7 +57,7 @@ public final class Controller implements Initializable {
             return;
         }
 
-        if (buttonText.matches("+-*/")) {
+        if (buttonText.matches("[+, -, *,/]")) {
             left = new BigDecimal(textField.getText());
             selectedOperator = buttonText;
             numberInputting = false;
