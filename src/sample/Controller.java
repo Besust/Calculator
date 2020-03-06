@@ -2,16 +2,19 @@ package sample;
 
 import javafx.fxml.FXML;
 
-import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.math.BigDecimal;
 
-import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-public class Controller {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.Initializable;
+
+
+public final class Controller implements Initializable {
 
     private BigDecimal left;
     private String selectedOperator;
@@ -40,7 +43,7 @@ public class Controller {
 
             selectedOperator = " ";
             numberInputting = true;
-            textField.clear();
+            textField.setText("0");
             return;
         }
 
@@ -61,7 +64,7 @@ public class Controller {
             return;
         }
 
-        if(buttonText.equals("=")) {
+        if (buttonText.equals("=")) {
             final BigDecimal right = numberInputting ? new BigDecimal(textField.getText()) : left;
 
             left = calculate(selectedOperator, left, right);
@@ -71,8 +74,8 @@ public class Controller {
         }
     }
 
-        public static BigDecimal calculate(String operator, BigDecimal left, BigDecimal right) {
-        switch(operator) {
+    public static BigDecimal calculate(String operator, BigDecimal left, BigDecimal right) {
+        switch (operator) {
             case "+":
                 return left.add(right);
             case "-":
@@ -84,6 +87,11 @@ public class Controller {
 
         }
         return right;
+
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resources) {
 
     }
 
