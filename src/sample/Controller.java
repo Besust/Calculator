@@ -6,7 +6,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.math.BigDecimal;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -16,7 +15,6 @@ public class Controller {
 
     private BigDecimal left;
     private String selectedOperator;
-    weqweqwe
     private boolean numberInputting;
 
     @FXML
@@ -63,7 +61,29 @@ public class Controller {
             return;
         }
 
-        
+        if(buttonText.equals("=")) {
+            final BigDecimal right = numberInputting ? new BigDecimal(textField.getText()) : left;
+
+            left = calculate(selectedOperator, left, right);
+            textField.setText(left.toString());
+            numberInputting = false;
+            return;
+        }
+    }
+
+        public static BigDecimal calculate(String operator, BigDecimal left, BigDecimal right) {
+        switch(operator) {
+            case "+":
+                return left.add(right);
+            case "-":
+                return left.subtract(right);
+            case "*":
+                return left.multiply(right);
+            case "/":
+                return left.divide(right);
+
+        }
+        return right;
 
     }
 
