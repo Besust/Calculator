@@ -33,12 +33,13 @@
         <HBox layoutY="160.0" AnchorPane.topAnchor="160.0">
             <children>
                 <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" text="0" />
-                <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" text="." />
-                <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" text="=" />
-                <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" text="+" />
+<!--                <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" text="." />-->
+                <Button mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="200.0" text="=" />
+                <Button layoutX="300.0" mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="100.0" text="+" />
             </children>
         </HBox>
-        <Button layoutY="200.0" mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="400.0" text="C"/>
+        <Button layoutY="200.0" mnemonicParsing="false" onAction="#operateButton" prefHeight="40.0" prefWidth="400.0" text="C" />
+
 
     </children>
 </AnchorPane>
